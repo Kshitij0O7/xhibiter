@@ -50,25 +50,29 @@ const Home_1 = () => {
             <div className="section">
               <Top_collection />
             </div>
-            <div className="section">
-              <Latest_Drop />
-            </div>
             {/*
               <div className="section">
                 <Slider />
+
               </div>
+
+              <div className="section">
+                         <Latest_Drop />
+               
+            </div>
+
+              <div className="section">
+              <Team />{" "}
+            </div>
+              <div className="section">
+              <Benifits />{" "}
+            </div>
         */}{" "}
             <div className="section">
               <Auctions_categories />{" "}
             </div>
             <div className="section">
               <Hottest_Sales />{" "}
-            </div>
-            <div className="section">
-              <Team />{" "}
-            </div>
-            <div className="section">
-              <Benifits />{" "}
             </div>
             <div className="section">
               <CallToActions />{" "}

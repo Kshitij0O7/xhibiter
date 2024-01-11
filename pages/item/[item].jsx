@@ -13,6 +13,8 @@ import Meta from "../../components/Meta";
 import { useDispatch } from "react-redux";
 import { bidsModalShow } from "../../redux/counterSlice";
 import Image from "next/image";
+import BuyModal from "../../components/modal/buyModal";
+import { buyModalShow } from "../../redux/counterSlice";
 
 const Item = () => {
   const dispatch = useDispatch();
@@ -326,16 +328,13 @@ const Item = () => {
                           <Link href="#">
                             <button
                               className="bg-accent shadow-accent-volume hover:bg-accent-dark inline-block w-50 rounded-full py-3 px-8 text-center font-semibold text-white transition-all btn-grad-2"
-                              onClick={() => dispatch(bidsModalShow())}
+                              onClick={() => dispatch(buyModalShow())}
                             >
                               By Now{" "}
                             </button>
                           </Link>
                           <Link href="#">
-                            <button
-                              className="bg-accent shadow-accent-volume hover:bg-accent-dark inline-block w-50 rounded-full py-3 px-8 text-center font-semibold text-white transition-all btn-grad-2"
-                              onClick={() => dispatch(bidsModalShow())}
-                            >
+                            <button className="bg-accent shadow-accent-volume hover:bg-accent-dark inline-block w-50 rounded-full py-3 px-8 text-center font-semibold text-white transition-all btn-grad-2">
                               Add to cart
                             </button>
                           </Link>

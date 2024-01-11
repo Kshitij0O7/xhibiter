@@ -36,7 +36,7 @@ const CategoryItem = () => {
           .replace(".gif", "");
         return (
           <article key={id}>
-            <div className="dark:bg-jacarta-700 dark:border-jacarta-700 border-jacarta-100 rounded-2.5xl block border bg-white p-[1.1875rem] transition-shadow hover:shadow-lg">
+            <div className="dark:bg-jacarta-700 dark:border-jacarta-700 border-jacarta-100 rounded-2.5xl block border bg-white p-[1.1875rem] transition-shadow bg-red hover:shadow-lg">
               <figure className="relative">
                 <Link href={`/item/${itemLink}`}>
                   <Image
@@ -101,7 +101,7 @@ const CategoryItem = () => {
                   className="text-accent font-display text-sm font-semibold"
                   onClick={() => dispatch(buyModalShow())}
                 >
-                  Buy now
+                  Buy Now{" "}
                 </button>
                 <Link
                   href={`/item/${itemLink}`}

@@ -115,7 +115,7 @@ const Index = () => {
           </h1>
 
           {/* <!-- Filters --> */}
-          <div className="mb-8 flex flex-wrap items-center justify-between">
+          <div className="mb-8 flex flex-wrap items-center justify-between ml-8">
             <div className="flex flex-wrap items-center">
               {/* <!-- Categories --> */}
               <Recently_added_dropdown
